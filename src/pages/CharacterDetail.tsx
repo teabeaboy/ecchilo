@@ -75,7 +75,7 @@ const CharacterDetail: React.FC = () => {
               <h2 className="text-lg font-semibold text-white mb-4">More about me</h2>
               <p className="text-gray-300 mb-4">{character.description}</p>
               <a 
-                href="https://x.com/ecchidotlove"
+                href={character.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 text-pink-500 hover:text-pink-400 transition-colors duration-300"

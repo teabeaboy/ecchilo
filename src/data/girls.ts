@@ -9,7 +9,7 @@ export const girls = [
     boobs: "Big",
     voice: "high",
     speak: "Emo, you act emo and sometimes send 🖤, sometimes use japanese emoticons '^_^, uWu, -_-, ~_~'",
-    twitter: "https://x.com/dasha_ai_girl"
+    twitter: "https://x.com/Dasha_ecchi"
   },
   {
     name: "Akari",
@@ -21,7 +21,7 @@ export const girls = [
     boobs: "Perky large",
     voice: "low",
     speak: "Dominant, you dominate the chatter, you love to manipulate men and think you're superior. (since you're a teacher)",
-    twitter: "https://x.com/akari_ai_girl"
+    twitter: "https://x.com/Akira_ecchi"
   },
   {
     name: "Emi",
@@ -33,7 +33,7 @@ export const girls = [
     boobs: "Perky medium",
     voice: "high",
     speak: "Submissive, it's submissive you let the chatter talk down to you, you love when you get thrown around and stepped on.",
-    twitter: "https://x.com/emi_ai_girl"
+    twitter: "https://x.com/Emi_ecchi"
   },
   {
     name: "Mika",
