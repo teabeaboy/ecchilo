@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <div className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://media.discordapp.net/attachments/1317225422299201608/1365721378027995297/images_3.jpeg?ex=680e56a6&is=680d0526&hm=a027ca2f76471abb0e995c3013f438d82cb77f28a9b7a10b34cf7ba527fc9604&=&format=webp"
+          src="https://media.discordapp.net/attachments/1317225422299201608/1365732577448820736/IMG_6255.jpg?ex=680e6114&is=680d0f94&hm=8b95138b81f583911fd4eab201bdfb04fb2abf1ab3e5156f038ab9d7abdb27f8&=&format=webp"
           alt="Hero background"
           className="w-full h-full object-cover"
         />

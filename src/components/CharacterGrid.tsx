@@ -3,12 +3,12 @@ import CharacterCard from './CharacterCard';
 import { Character } from '../types';
 
 interface CharacterGridProps {
-  characters: Character[];
+  Companions: Character[];
   type: 'girl' | 'boy';
   title: string;
 }
 
-const CharacterGrid: React.FC<CharacterGridProps> = ({ characters, type, title }) => {
+const CharacterGrid: React.FC<CharacterGridProps> = ({ Companions, type, title }) => {
   const gridRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const CharacterGrid: React.FC<CharacterGridProps> = ({ characters, type, title }
         <span className="inline-block border-b-2 border-pink-500 pb-1">{title}</span>
       </h2>
       <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {characters.map((character, index) => (
+        {Companions.map((character, index) => (
           <div 
             key={character.name} 
             className="character-card opacity-0"

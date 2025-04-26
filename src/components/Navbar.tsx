@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
             <Link to="/" className="flex items-center group">
               <img 
                 src="https://media.discordapp.net/attachments/1317225422299201608/1365725492333772874/Untitled_design_13.png?ex=680e5a7b&is=680d08fb&hm=1fcff281649a6b9d5fa28e856ebd3aba3a7427caff1a59dc73df6e42efd1ef96&=&format=webp&quality=lossless&width=1000&height=1000"
-                alt="ecchiAI Logo"
+                alt="ecchiAI "
                 className="h-8 w-8 mr-2 rounded-full"
               />
               <span className="text-white font-bold text-xl relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 group-hover:after:w-full">ecchi</span>

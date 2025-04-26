@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-medium mb-4">Navigation</h3>
             <ul className="space-y-2">
               <li><a href="/" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Home</a></li>
-              <li><a href="#girls" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Characters</a></li>
+              <li><a href="#girls" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Companions</a></li>
             </ul>
           </div>
           

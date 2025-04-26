@@ -9,6 +9,29 @@ interface CharacterCardProps {
 }
 
 const CharacterCard: React.FC<CharacterCardProps> = ({ character, index, type }) => {
+  // Disable click for Mika (index 3)
+  if (index === 3) {
+    return (
+      <div className="group relative overflow-hidden rounded-xl opacity-50 cursor-not-allowed">
+        <div className="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
+          <img 
+            src={character.image} 
+            alt={character.name} 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
+          <div className="absolute bottom-0 left-0 right-0 p-4">
+            <h3 className="text-xl font-bold text-white">{character.name}</h3>
+            <p className="text-sm text-gray-300 line-clamp-1">{character.description.substring(0, 50)}...</p>
+            <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-500/80 text-white">
+              Coming Soon
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <Link 
       to={`/character/${type}/${index}`} 

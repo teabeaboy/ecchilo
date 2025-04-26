@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <section id="girls" className="mb-16">
-          <CharacterGrid characters={girls} type="girl" title="AI Characters" />
+          <CharacterGrid Companions={girls} type="girl" title="AI Companions" />
         </section>
       </div>
     </div>

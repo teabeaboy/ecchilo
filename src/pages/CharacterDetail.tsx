@@ -12,7 +12,17 @@ const CharacterDetail: React.FC = () => {
   const character = characters[parseInt(id || '0', 10)];
   
   if (!character) {
-    return <div className="min-h-screen flex items-center justify-center">Character not found</div>;
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <Link 
+          to="/" 
+          className="text-pink-500 hover:text-pink-400 transition-colors duration-300 flex items-center"
+        >
+          <ArrowLeft className="w-5 h-5 mr-2" />
+          Back to Home
+        </Link>
+      </div>
+    );
   }
 
   return (
@@ -62,7 +72,7 @@ const CharacterDetail: React.FC = () => {
               <h2 className="text-lg font-semibold text-white mb-4">More about me</h2>
               <p className="text-gray-300 mb-4">{character.description}</p>
               <a 
-                href={character.twitter}
+                href="https://x.com/ecchidotlove"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 text-pink-500 hover:text-pink-400 transition-colors duration-300"
