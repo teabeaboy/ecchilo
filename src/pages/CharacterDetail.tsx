@@ -25,6 +25,9 @@ const CharacterDetail: React.FC = () => {
     );
   }
 
+  // Get both images for the character
+  const characterImages = [character.image, character.images[1]].filter(Boolean);
+
   return (
     <div className="min-h-screen bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -40,10 +43,10 @@ const CharacterDetail: React.FC = () => {
             </Link>
 
             <div className="grid grid-cols-2 gap-4">
-              {[character.image, ...character.images.slice(0, 1)].map((img, index) => (
+              {characterImages.map((img, index) => (
                 <div 
                   key={index}
-                  className="aspect-square rounded-xl overflow-hidden shadow-lg"
+                  className="aspect-square rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105"
                 >
                   <img 
                     src={img} 
