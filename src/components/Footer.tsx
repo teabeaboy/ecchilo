@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                  className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:scale-110">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="https://github.com/teabeaboy" target="_blank" rel="noopener noreferrer"
+              <a href="https://github.com/teabeaboy/ecchilo" target="_blank" rel="noopener noreferrer"
                  className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:scale-110">
                 <Github className="w-5 h-5" />
               </a>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><a href="https://pump.fun/coin/ComingSoon" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Buy</a></li>
               <li><a href="https://dexscreener.com/solana/ComingSoon" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Dexscreener</a></li>
-              <li><a href="https://github.com/teabeaboy" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">GitHub</a></li>
+              <li><a href="https://github.com/teabeaboy/ecchilo" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">GitHub</a></li>
               <li><a href="https://x.com/ecchi_online" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Twitter</a></li>
             </ul>
           </div>
