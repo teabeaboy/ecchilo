@@ -1,19 +1,16 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <video 
-          autoPlay 
-          loop 
-          muted 
+        <img 
+          src="https://media.discordapp.net/attachments/1317225422299201608/1365721378027995297/images_3.jpeg?ex=680e56a6&is=680d0526&hm=a027ca2f76471abb0e995c3013f438d82cb77f28a9b7a10b34cf7ba527fc9604&=&format=webp"
+          alt="Hero background"
           className="w-full h-full object-cover"
-          poster="https://images.pexels.com/photos/1671643/pexels-photo-1671643.jpeg"
-        >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-anime-girl-looking-intimidatingly-at-camera-40847-large.mp4" type="video/mp4" />
-        </video>
+        />
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
       
@@ -25,10 +22,17 @@ const Hero: React.FC = () => {
           Discover a world of unique personalities and stunning visuals
         </p>
         <div className="flex justify-center space-x-4">
-          <button className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full flex items-center transition-all duration-300 transform hover:scale-105">
+          <Link 
+            to="#girls" 
+            className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full flex items-center transition-all duration-300 transform hover:scale-105"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('girls')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             <Heart className="w-5 h-5 mr-2" />
             Explore Characters
-          </button>
+          </Link>
         </div>
       </div>
     </div>

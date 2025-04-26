@@ -37,7 +37,7 @@ export const girls = [
   },
   {
     name: "Mika",
-    image: "/ai-figures/mika.webp",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000' fill-opacity='0.5'/%3E%3Ctext x='50' y='50' font-family='Arial' font-size='12' fill='white' text-anchor='middle' alignment-baseline='middle'%3EBeta Testing%3C/text%3E%3C/svg%3E",
     background: "/ai-figures/mikabg.webp",
     description: "Mika is the perfect blend of ambition and kindness. While she's a successful businesswoman with a sharp mind for strategy, it's her warmth and genuine care for others that truly set her apart. Whether she's leading a team or offering guidance to a colleague, Emi always takes the time to listen and offer support, making everyone around her feel valued. Her soft smile and approachable nature make her a joy to be around, and her sincerity shines through in everything she does. Emi's effortless charm and kindness create an environment where everyone feels empowered and inspired.",
     images: [],

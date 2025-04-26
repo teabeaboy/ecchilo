@@ -1,5 +1,5 @@
 import React from 'react';
-import { Twitter, MessageCircle, Heart } from 'lucide-react';
+import { Twitter, Github, Heart } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -19,9 +19,9 @@ const Footer: React.FC = () => {
                  className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:scale-110">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="t.me/ecchionline" target="_blank" rel="noopener noreferrer"
+              <a href="https://github.com/teabeaboy" target="_blank" rel="noopener noreferrer"
                  className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:scale-110">
-                <MessageCircle className="w-5 h-5" />
+                <Github className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -37,9 +37,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-medium mb-4">Connect</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Buy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Dexscreener</a></li>
-              <li><a href="t.me/ecchionline" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Telegram</a></li>
+              <li><a href="https://pump.fun/coin/ComingSoon" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Buy</a></li>
+              <li><a href="https://dexscreener.com/solana/ComingSoon" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Dexscreener</a></li>
+              <li><a href="https://github.com/teabeaboy" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">GitHub</a></li>
               <li><a href="https://x.com/ecchi_online" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Twitter</a></li>
             </ul>
           </div>
