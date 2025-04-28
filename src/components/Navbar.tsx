@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
             </a>
             
             <a 
-              href="https://x.com/ecchi_online" 
+              href="https://x.com/ecchidotlove" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center text-pink-500 hover:text-pink-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(236,72,153,0.3)] hover:scale-105"
