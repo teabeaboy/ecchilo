@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { sendMsgToOpenAI } from '../lib/openai';
 import { Character } from '../types';
-import { Send, Mic } from 'lucide-react';
+import { Send } from 'lucide-react';
 
 interface Message {
   content: string;
@@ -18,7 +18,6 @@ const Chat: React.FC<ChatProps> = ({ character }) => {
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const [useVoice, setUseVoice] = useState(false);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -59,6 +58,14 @@ const Chat: React.FC<ChatProps> = ({ character }) => {
       setMessages(prev => [...prev, aiMessage]);
     } catch (error) {
       console.error('Error sending message:', error);
+      
+      const errorMessage: Message = {
+        content: "Sorry, I couldn't process your message. Please try again!",
+        isUser: false,
+        timestamp: new Date()
+      };
+      
+      setMessages(prev => [...prev, errorMessage]);
     } finally {
       setIsLoading(false);
     }
@@ -73,20 +80,11 @@ const Chat: React.FC<ChatProps> = ({ character }) => {
   };
 
   return (
-    <div className="flex flex-col h-[calc(100vh-200px)] bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-xl">
-      <div className="flex items-center justify-between px-4 py-3 bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+    <div className="flex flex-col h-[calc(100vh-200px)] bg-gray-900 rounded-xl overflow-hidden shadow-xl border border-gray-800">
+      <div className="flex items-center justify-between px-4 py-3 bg-gray-800 border-b border-gray-700">
         <div className="flex items-center space-x-2">
-          <span className="text-gray-900 dark:text-white font-medium">Chat with {character.name}</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <button
-            onClick={() => setUseVoice(!useVoice)}
-            className={`p-2 rounded-lg transition-colors duration-300 ${
-              useVoice ? 'bg-pink-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
-            }`}
-          >
-            <span className="text-xs">✎</span>
-          </button>
+          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+          <span className="text-white font-medium">Chat with {character.name}</span>
         </div>
       </div>
 
@@ -99,8 +97,8 @@ const Chat: React.FC<ChatProps> = ({ character }) => {
             <div
               className={`max-w-[80%] rounded-lg px-4 py-2 ${
                 message.isUser
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-pink-200 text-gray-900'
+                  ? 'bg-pink-600 text-white'
+                  : 'bg-gray-800 text-gray-100'
               }`}
             >
               <p className="break-words">{message.content}</p>
@@ -113,22 +111,22 @@ const Chat: React.FC<ChatProps> = ({ character }) => {
         <div ref={messagesEndRef} />
       </div>
 
-      <form onSubmit={handleSendMessage} className="p-4 bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+      <form onSubmit={handleSendMessage} className="p-4 bg-gray-800 border-t border-gray-700">
         <div className="flex space-x-2">
           <input
             type="text"
             value={inputMessage}
             onChange={(e) => setInputMessage(e.target.value)}
-            placeholder={`Send a message to ${character.name}`}
-            className="flex-1 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500"
+            placeholder={`Message ${character.name}...`}
+            className="flex-1 bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500"
             disabled={isLoading}
           />
           <button
             type="submit"
             disabled={isLoading}
-            className="bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-pink-600 text-white rounded-lg px-4 py-2 hover:bg-pink-700 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
           >
-            Send
+            <Send className="w-4 h-4" />
           </button>
         </div>
       </form>
