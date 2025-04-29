@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
           
           <div className="flex space-x-4">
             <a 
-              href="https://pump.fun/coin/ComingSoon" 
+              href="https://pump.fun/coin/2QnU9XebusvTkUaz84Ve5tXXt7k9PeSZnzZBzp6vpump" 
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-pink-500 hover:text-pink-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(236,72,153,0.3)] hover:scale-105"
@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
             </a>
             
             <a 
-              href="https://dexscreener.com/solana/ComingSoon" 
+              href="https://dexscreener.com/solana/2QnU9XebusvTkUaz84Ve5tXXt7k9PeSZnzZBzp6vpump" 
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-pink-500 hover:text-pink-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(236,72,153,0.3)] hover:scale-105"
