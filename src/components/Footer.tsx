@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-medium mb-4">Connect</h3>
             <ul className="space-y-2">
-              <li><a href="https://pump.fun/coin/2QnU9XebusvTkUaz84Ve5tXXt7k9PeSZnzZBzp6vpump" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Buy</a></li>
+              <li><a href="https://pump.fun/coin/NIGGA" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Buy</a></li>
               <li><a href="https://dexscreener.com/solana/2QnU9XebusvTkUaz84Ve5tXXt7k9PeSZnzZBzp6vpump" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Dexscreener</a></li>
               <li><a href="https://github.com/teabeaboy/ecchilo" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">GitHub</a></li>
               <li><a href="https://x.com/ecchi_online" className="text-gray-400 hover:text-pink-500 transition-all duration-300 hover:translate-x-2 inline-block">Twitter</a></li>
